@@ -21,39 +21,39 @@ interface FeaturesProps {
 const featureList: FeaturesProps[] = [
   {
     icon: "tabletSmartphone",
-    title: "Mobile Friendly",
+    title: "Access Anytime, Anywhere",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, consectetur.",
+      "Get real-time agricultural insights wherever you are. The platform is optimized to deliver full functionality across all devices, ensuring smooth access wherever you are.",
   },
   {
     icon: "badgeCheck",
-    title: "Social Proof",
+    title: "Data Provenance & Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur. Natus consectetur, odio ea accusamus aperiam.",
+      "Leverage blockchain to ensure every piece of data is authentic and verifiable. Our platform builds trust by offering transparent, immutable records.",
   },
   {
     icon: "goal",
-    title: "Targeted Content",
+    title: "Customizable Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. odio ea accusamus aperiam.",
+      "Tailor the platform to your specific agricultural needs. Select pest, drought, or crop health insights, and receive alerts and predictions suited to your farm's requirements.",
   },
   {
     icon: "pictureInPicture",
-    title: "Strong Visuals",
+    title: "Immersive Visualizations",
     description:
-      "Lorem elit. A odio velit cum aliquam. Natus consectetur dolores, odio ea accusamus aperiam.",
+      "Explore data through interactive 3D visualizations on Cesium.js. View real-time satellite scans, historical trends, and predictive analytics in stunning detail.",
   },
   {
     icon: "mousePointerClick",
-    title: "Clear CTA",
+    title: "Intuitive User Interface",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing. odio ea accusamus consectetur.",
+      "Navigate seamlessly with a user-friendly interface. The design is simple yet powerful, making it accessible for both beginners and experts in agriculture.",
   },
   {
     icon: "newspaper",
-    title: "Clear Headline",
+    title: "Comprehensive Reporting",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur.",
+      "Generate detailed reports on pest infestations, drought risks, and crop health trends. Access both PDF downloads and API integration for enterprise solutions.",
   },
 ];
 
@@ -80,10 +80,7 @@ const iconMap: Record<
 </script>
 
 <template>
-  <section
-    id="features"
-    class="container py-24 sm:py-32"
-  >
+  <section id="features" class="container py-24 sm:py-32">
     <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
       Features
     </h2>
@@ -93,25 +90,21 @@ const iconMap: Record<
     </h2>
 
     <h3 class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground mb-8">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem
-      fugiat, odit similique quasi sint reiciendis quidem iure veritatis optio
-      facere tenetur.
+      Our platform combines AI-powered insights, satellite imagery, and
+      blockchain verification to provide transparent, verifiable data. With
+      drone-assisted monitoring and real-time AI algorithms, we enhance pest
+      detection and environmental forecasting, empowering farmers to make
+      proactive decisions, reduce chemical use, and promote sustainability.
     </h3>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-      <div
-        v-for="{ icon, title, description } in featureList"
-        :key="title"
-      >
+      <div v-for="{ icon, title, description } in featureList" :key="title">
         <Card class="h-full bg-background border-0 shadow-none">
           <CardHeader class="flex justify-center items-center">
             <div
               class="bg-primary/20 p-2 rounded-full ring-8 ring-primary/10 mb-4"
             >
-              <component
-                :is="iconMap[icon]"
-                class="size-6 text-primary"
-              />
+              <component :is="iconMap[icon]" class="size-6 text-primary" />
             </div>
 
             <CardTitle>

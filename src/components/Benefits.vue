@@ -21,25 +21,25 @@ const benefitList: BenefitsProps[] = [
     icon: "blocks",
     title: "Build Brand Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Leverage blockchain technology to ensure transparency and security in your agricultural data. Provide verified, immutable records to your customers, building trust and credibility.",
   },
   {
     icon: "lineChart",
-    title: "More Leads",
+    title: "Data-Driven Insights",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam, natus consectetur.",
+      "Make informed decisions with AI-powered predictions and satellite data analysis. Monitor crop health, pest infestations, and environmental risks to maximize yield and sustainability.",
   },
   {
     icon: "wallet",
-    title: "Higher Conversions",
+    title: "Increased Efficiency",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consectetur. A odio velit cum aliquam",
+      "Reduce costs and resource waste with our automated AI and drone-assisted monitoring system. Ensure timely, accurate interventions without the need for on-site inspections.",
   },
   {
     icon: "sparkle",
-    title: "Test Marketing Ideas",
+    title: "Proactive Risk Management",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio velit cum aliquam. Natus consectetur dolores.",
+      "Get ahead of potential threats with early detection of pest invasions, drought risks, and deforestation. Protect your farm, business, and the environment with predictive, real-time data.",
   },
 ];
 
@@ -62,21 +62,20 @@ const iconMap: Record<
 </script>
 
 <template>
-  <section
-    id="benefits"
-    class="container py-24 sm:py-32"
-  >
+  <section id="benefits" class="container py-24 sm:py-32">
     <div class="grid lg:grid-cols-2 place-items-center lg:gap-24">
       <div>
         <h2 class="text-lg text-primary mb-2 tracking-wider">Benefits</h2>
 
         <h2 class="text-3xl md:text-4xl font-bold mb-4">
-          Your Shortcut to Success
+          Empower Your Agricultural Decisions
         </h2>
         <p class="text-xl text-muted-foreground mb-8">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non ducimus
-          reprehenderit architecto rerum similique facere odit deleniti
-          necessitatibus quo quae.
+          Harness the power of AI-driven insights, satellite data, and
+          blockchain technology to optimize farming practices. With real-time
+          updates on crop health, pest invasions, and drought risks, you can
+          make informed decisions that drive efficiency, sustainability, and
+          profitability.
         </p>
       </div>
 
@@ -88,10 +87,7 @@ const iconMap: Record<
         >
           <CardHeader>
             <div class="flex justify-between">
-              <component
-                class="size-8 mb-6 text-primary"
-                :is="iconMap[icon]"
-              />
+              <component class="size-8 mb-6 text-primary" :is="iconMap[icon]" />
 
               <span
                 class="text-5xl text-muted-foreground/15 font-medium transition-all delay-75 group-hover/number:text-muted-foreground/30"

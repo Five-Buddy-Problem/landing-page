@@ -11,41 +11,73 @@ interface HowItWorksProps {
 
 const HowItWorksList: HowItWorksProps[] = [
   {
-    badgeTitle: "Contribute",
-    title: "Make a Difference with Every Contribution",
+    badgeTitle: "Log In",
+    title: "Access Your Agricultural Insights",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "roboto.png",
+      "Easily log in to the platform using secure authentication methods and gain access to the full suite of agricultural data and tools.",
+    image: "login-icon.png", // Replace with a relevant image
   },
   {
-    badgeTitle: "Discover",
-    title: "Create an Impact with Every Choice",
+    badgeTitle: "Define Area",
+    title: "Select Your Area of Interest",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-    image: "runner.png",
+      "Define your area of interest by uploading GeoJSON files or selecting your region on the Cesium.js map for accurate, targeted data collection.",
+    image: "map-selection.png", // Replace with a relevant image
   },
   {
-    badgeTitle: "Innovate",
-    title: "Make Every Action Count",
+    badgeTitle: "Select Insights",
+    title: "Choose the Insights You Want to Monitor",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-    image: "pacheco.png",
+      "Select key insights like pest infestations, drought risks, or crop health to monitor, customized to the needs of your agricultural operation.",
+    image: "insights-selection.png", // Replace with a relevant image
   },
   {
-    badgeTitle: "Collaborate",
-    title: "Tackle this challenge together",
+    badgeTitle: "Initiate Data Collection",
+    title: "Collect Data via Satellites and Drones",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "gamestation.png",
+      "Trigger data collection from Sentinel-2 satellites or drone hubs, ensuring real-time and precise monitoring of your land and crops.",
+    image: "data-collection.png", // Replace with a relevant image
+  },
+  {
+    badgeTitle: "Process with AI",
+    title: "AI-Driven Data Analysis",
+    description:
+      "Let our AI models process and analyze the collected data, identifying key agricultural risks and providing valuable insights for decision-making.",
+    image: "ai-analysis.png", // Replace with a relevant image
+  },
+  {
+    badgeTitle: "Visualize & Compare",
+    title: "Compare Insights and View Results",
+    description:
+      "Compare the collected data against historical trends, and view it through interactive 3D visualizations on the platform's dashboard.",
+    image: "visualize-results.png", // Replace with a relevant image
+  },
+  {
+    badgeTitle: "Store & Secure",
+    title: "Store Results on Blockchain",
+    description:
+      "Ensure the integrity and authenticity of your data by securely storing the results on the platform's blockchain for transparent and verifiable records.",
+    image: "blockchain-security.png", // Replace with a relevant image
+  },
+  {
+    badgeTitle: "Generate Reports",
+    title: "Get Detailed Reports",
+    description:
+      "Generate comprehensive reports on pest infestations, drought risks, and crop health, with options for downloading or integrating via API for enterprise use.",
+    image: "generate-reports.png", // Replace with a relevant image
+  },
+  {
+    badgeTitle: "Monitor Continuously",
+    title: "Continuous Monitoring and Updates",
+    description:
+      "Stay informed with continuous monitoring and automatic updates, ensuring you always have the latest insights at your fingertips.",
+    image: "continuous-monitoring.png", // Replace with a relevant image
   },
 ];
 </script>
 
 <template>
-  <section
-    id="features"
-    class="container py-24 sm:py-32"
-  >
+  <section id="features" class="container py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
         How It Works
@@ -85,8 +117,9 @@ const HowItWorksList: HowItWorksProps[] = [
 
         <img
           :src="image"
-          :alt="`Image describing ${title} `"
-          className="w-[150px]  md:w-[250px] lg:w-[300px] mx-auto -scale-x-100 "
+          :alt="`Image describing ${title}`"
+          className="w-[100px] md:w-[200px] lg:w-[200px] mx-auto -scale-x-100 
+             dark:invert dark:contrast-100"
         />
         <div
           :class="[

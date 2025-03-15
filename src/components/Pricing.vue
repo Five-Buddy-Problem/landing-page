@@ -19,7 +19,6 @@ enum PopularPlan {
 interface PlanProps {
   title: string;
   popular: PopularPlan;
-  price: number;
   description: string;
   buttonText: string;
   benefitList: string[];
@@ -29,7 +28,6 @@ const plans: PlanProps[] = [
   {
     title: "Free",
     popular: 0,
-    price: 0,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Start Free Trial",
@@ -44,7 +42,6 @@ const plans: PlanProps[] = [
   {
     title: "Premium",
     popular: 1,
-    price: 45,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Get starterd",
@@ -59,7 +56,6 @@ const plans: PlanProps[] = [
   {
     title: "Enterprise",
     popular: 0,
-    price: 120,
     description:
       "Lorem ipsum dolor sit, amet ipsum consectetur adipisicing elit.",
     buttonText: "Contact US",
@@ -87,7 +83,7 @@ const plans: PlanProps[] = [
     <h3
       class="md:w-1/2 mx-auto text-xl text-center text-muted-foreground pb-14"
     >
-      Lorem ipsum dolor sit amet consectetur adipisicing reiciendis.
+      Unlock all the tools you need for smarter, data-driven farming.
     </h3>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4">
@@ -112,20 +108,11 @@ const plans: PlanProps[] = [
           </CardTitle>
 
           <CardDescription class="pb-4">{{ description }}</CardDescription>
-
-          <div>
-            <span class="text-3xl font-bold">${{ price }}</span>
-            <span class="text-muted-foreground"> /month</span>
-          </div>
         </CardHeader>
 
         <CardContent class="flex">
           <div class="space-y-4">
-            <span
-              v-for="benefit in benefitList"
-              :key="benefit"
-              class="flex"
-            >
+            <span v-for="benefit in benefitList" :key="benefit" class="flex">
               <Check class="text-primary mr-2" />
               <h3>{{ benefit }}</h3>
             </span>

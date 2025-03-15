@@ -26,141 +26,80 @@ interface SocialNetworkProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/250?img=58",
-    firstName: "Leo",
-    lastName: "Miranda",
-    positions: ["Vue Fronted Developer", "Creator Of This Website"],
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/D5603AQErGIZ6iL7Ojg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1702656759738?e=1747267200&v=beta&t=LMJ6zvYfldIZAxSknFLWQqCy4oZR-Xfj7ZffIZbAIeg",
+    firstName: "I. Kaan",
+    lastName: "Yilmaz",
+    positions: ["Full-stack Developer"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/ismet-kaan-yilmaz-809175245/",
       },
       {
         name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
+        url: "https://github.com/kaandesu",
       },
     ],
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1528&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Elizabeth",
-    lastName: "Moore",
-    positions: ["UI/UX Designer"],
+    imageUrl: "ege.png",
+    firstName: "Ege",
+    lastName: "Onder",
+    positions: ["Full-stack Developer"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "David",
-    lastName: "Diaz",
-    positions: ["Machine Learning Engineer", "TensorFlow Tinkerer"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/egeonder/",
       },
       {
         name: "Github",
-        url: "https://github.com/leoMirandaa",
+        url: "https://github.com/egeonder",
       },
     ],
   },
   {
     imageUrl:
-      "https://images.unsplash.com/photo-1573497161161-c3e73707e25c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Sarah",
-    lastName: "Robinson",
-    positions: ["Cloud Native Developer", " Kubernetes Orchestrator"],
+      "https://media.licdn.com/dms/image/v2/D4D03AQGQNjjEdAZO9w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1681513488909?e=1747267200&v=beta&t=TxjzMyP6aQ7xZlIdgAAkK3gmqALOIYXSJ2iGLB03uoM",
+    firstName: "Deran",
+    lastName: "Akin",
+    positions: ["Computer Engineer", "Research & Presentation"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/deran-akin/",
       },
       {
         name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
+        url: "https://github.com/der4ntula",
       },
     ],
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1616805765352-beedbad46b2a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Michael",
-    lastName: "Holland",
-    positions: ["DevOps Engineer", "CI/CD Pipeline Mastermind"],
+    imageUrl: "atabay.png",
+    firstName: "Taha Atabay",
+    lastName: "Cetin",
+    positions: ["AI Engineer"],
     socialNetworks: [
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Zoe",
-    lastName: "Garcia",
-    positions: ["JavaScript Evangelist", "Deno Champion"],
-    socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "https://www.linkedin.com/in/taha-atabay-cetin/",
       },
       {
         name: "Github",
-        url: "https://github.com/leoMirandaa",
+        url: "https://github.com/atabaycetin",
       },
     ],
   },
   {
-    imageUrl:
-      "https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Evan",
-    lastName: "James",
-    positions: ["Backend Developer"],
+    imageUrl: "elio.jpg",
+    firstName: "Elio",
+    lastName: "Egidio",
+    positions: ["Computer Engineer", "Research & Presentation"],
     socialNetworks: [
-      {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
       {
         name: "Github",
-        url: "https://github.com/leoMirandaa",
-      },
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
-      },
-    ],
-  },
-  {
-    imageUrl:
-      "https://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://images.unsplash.com/photo-1573497019236-17f8177b81e8?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    firstName: "Pam",
-    lastName: "Taylor",
-    positions: ["Fullstack developer", "UX Researcher"],
-    socialNetworks: [
-      {
-        name: "X",
-        url: "https://x.com/leo_mirand4",
+        url: "https://github.com/ElioEgidio",
       },
     ],
   },
@@ -181,16 +120,11 @@ const socialIcon = (socialName: string) => {
 </script>
 
 <template>
-  <section
-    id="team"
-    class="container lg:w-[75%] py-24 sm:py-32"
-  >
+  <section id="team" class="container lg:w-[75%] py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">Team</h2>
 
-      <h2 class="text-3xl md:text-4xl text-center font-bold">
-        The Company Dream Team
-      </h2>
+      <h2 class="text-3xl md:text-4xl text-center font-bold">The Dream Team</h2>
     </div>
 
     <div
