@@ -7,11 +7,11 @@ mode.value = "dark";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
+  // NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
+  // NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import {
   Sheet,
@@ -32,11 +32,6 @@ import ToggleTheme from "./ToggleTheme.vue";
 interface RouteProps {
   href: string;
   label: string;
-}
-
-interface FeatureProps {
-  title: string;
-  description: string;
 }
 
 const routeList: RouteProps[] = [
