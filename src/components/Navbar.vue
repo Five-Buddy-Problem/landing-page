@@ -58,23 +58,6 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
-  {
-    title: "Early Detection & Prevention",
-    description:
-      "Identify pest infestations, drought risks, and crop health issues in real-time using AI and satellite data.",
-  },
-  {
-    title: "Trust & Transparency",
-    description:
-      "Leverage blockchain to securely store historical agricultural data, ensuring accuracy and reliability.",
-  },
-  {
-    title: "Precision & Efficiency",
-    description:
-      "Utilize AI-powered satellite insights and targeted drone monitoring to reduce costs and minimize chemical overuse.",
-  },
-];
 const isOpen = ref<boolean>(false);
 </script>
 
