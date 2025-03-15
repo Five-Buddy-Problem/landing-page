@@ -91,7 +91,6 @@ const plans: PlanProps[] = [
         v-for="{
           title,
           popular,
-          price,
           description,
           buttonText,
           benefitList,
