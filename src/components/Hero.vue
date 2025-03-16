@@ -1,126 +1,132 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
+import { useColorMode } from '@vueuse/core';
 const mode = useColorMode();
 
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-vue-next";
+import { Badge } from '@/components/ui/badge';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-vue-next';
 
 const handleClick = () => {
-  window.location.href = "https://app.yieldsoftomorrow.world/";
+	window.location.href = 'https://app.yieldsoftomorrow.world/';
 };
 </script>
 
 <template>
-  <section class="container">
-    <div
-      class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
-    >
-      <div class="text-center space-y-8">
-        <Badge variant="outline" class="text-sm py-2">
-          <span class="mr-2 text-primary">
-            <Badge>New</Badge>
-          </span>
-          <span> Our custom blochain network is online! </span>
-        </Badge>
+	<section class="container">
+		<div
+			class="grid place-items-center lg:max-w-screen-xl gap-8 mx-auto py-20 md:py-32"
+		>
+			<div class="text-center space-y-8">
+				<Badge variant="outline" class="text-sm py-2">
+					<span class="mr-2 text-primary">
+						<Badge>New</Badge>
+					</span>
+					<span> Our custom blochain network is online! </span>
+				</Badge>
 
-        <div
-          class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
-        >
-          <h1>
-            Early
-            <span
-              class="text-transparent bg-gradient-to-r from-[#48e6a2] to-primary bg-clip-text"
-              >pest detection
-            </span>
-            for better Yields of Tomorrow
-          </h1>
-        </div>
+				<div
+					class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
+				>
+					<h1>
+						Early
+						<span
+							class="text-transparent bg-gradient-to-r from-[#48e6a2] to-primary bg-clip-text"
+							>pest detection
+						</span>
+						for better Yields of Tomorrow
+					</h1>
+				</div>
 
-        <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          Join us in revolutionizing farming with cutting-edge AI, real-time
-          satellite data, and blockchain security. Gain access to valuable
-          insights, powerful tools, and a community of forward-thinking farmers
-          and innovators.
-        </p>
+				<p
+					class="max-w-screen-sm mx-auto text-xl text-muted-foreground"
+				>
+					Join us in revolutionizing farming with cutting-edge AI,
+					real-time satellite data, and blockchain security. Gain
+					access to valuable insights, powerful tools, and a community
+					of forward-thinking farmers and innovators.
+				</p>
 
-        <div class="space-y-4 md:space-y-0 md:space-x-4">
-          <Button
-            class="w-5/6 md:w-1/4 font-bold group/arrow"
-            @click="handleClick()"
-          >
-            Get Started
-            <ArrowRight
-              class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
-            />
-          </Button>
+				<div class="space-y-4 md:space-y-0 md:space-x-4">
+					<Button
+						class="w-5/6 md:w-1/4 font-bold group/arrow"
+						@click="handleClick()"
+					>
+						Get Started
+						<ArrowRight
+							class="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform"
+						/>
+					</Button>
 
-          <Button as-child variant="secondary" class="w-5/6 md:w-1/4 font-bold">
-            <a
-              href="https://github.com/Five-Buddy-Problem/app.git"
-              target="_blank"
-              >Github respository</a
-            >
-          </Button>
-        </div>
-      </div>
+					<Button
+						as-child
+						variant="secondary"
+						class="w-5/6 md:w-1/4 font-bold"
+					>
+						<a
+							href="https://github.com/Five-Buddy-Problem/app.git"
+							target="_blank"
+							>Github respository</a
+						>
+					</Button>
+				</div>
+			</div>
 
-      <div class="relative group mt-14">
-        <!-- gradient shadow -->
-        <div
-          class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
-        ></div>
+			<div class="relative group mt-14">
+				<!-- gradient shadow -->
+				<div
+					class="absolute -top-6 right-12 w-[90%] h-12 lg:h-[80%] bg-primary/50 blur-3xl rounded-full img-shadow-animation"
+				></div>
 
-        <img
-          class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
-          :src="mode == 'light' ? 'bg-light.jpeg' : 'bg-dark.jpeg'"
-          alt="dashboard using shadcn-vue"
-        />
+				<img
+					class="w-full md:w-[1200px] mx-auto rounded-lg relative rouded-lg leading-none flex items-center border border-t-2 border-t-primary/30 img-border-animation"
+					:src="mode == 'light' ? 'bg-light.png' : 'bg-dark.png'"
+					alt="dashboard using shadcn-vue"
+				/>
 
-        <!-- gradient effect img -->
-        <div
-          class="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"
-        ></div>
-      </div>
-    </div>
-  </section>
+				<!-- gradient effect img -->
+				<div
+					class="absolute bottom-0 left-0 w-full h-20 md:h-28 bg-gradient-to-b from-background/0 via-background/50 to-background rounded-lg"
+				></div>
+			</div>
+		</div>
+	</section>
 </template>
 
 <style scoped>
 .img-shadow-animation {
-  animation-name: img-shadow-animation;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
+	animation-name: img-shadow-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
 }
 
 .img-border-animation {
-  animation-name: img-border-animation;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-direction: alternate;
+	animation-name: img-border-animation;
+	animation-iteration-count: infinite;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-direction: alternate;
 }
 
 @keyframes img-shadow-animation {
-  from {
-    opacity: 0.5;
-    transform: translateY(30px);
-  }
+	from {
+		opacity: 0.5;
+		transform: translateY(30px);
+	}
 
-  to {
-    opacity: 1;
-    transform: translateY(0px);
-  }
+	to {
+		opacity: 1;
+		transform: translateY(0px);
+	}
 }
 @keyframes img-border-animation {
-  from {
-    @apply border-t-primary/10;
-  }
+	from {
+		@apply border-t-primary/10;
+	}
 
-  to {
-    @apply border-t-primary/60;
-  }
+	to {
+		@apply border-t-primary/60;
+	}
 }
 </style>
