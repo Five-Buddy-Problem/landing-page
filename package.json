@@ -1,21 +1,14 @@
 {
-  "name": "shadcn-vue-landing-page",
-  "description": "Shadcn/Vue landing page template using Vue, Shadcn/Vue + TypeScript + Tailwind CSS.",
+  "name": "yields-of-tomorrow",
+  "description": "yields-of-tomorrow landing-page",
   "version": "0.1.1",
   "author": {
-    "name": "Leopoldo Miranda",
-    "email": "leomirandadev@gmail.com",
-    "url": "https://github.com/leomirandaa"
+    "name": "Kaan Yilmaz",
+    "email": "kaandesu00@gmail.com",
+    "url": "https://github.com/kaandesu"
   },
   "keywords": [
-    "vue",
-    "typescript",
-    "shadcn",
-    "shadcn/vue",
-    "tailwind",
-    "landing-page",
-    "template",
-    "responsive-design"
+    "vue"
   ],
   "type": "module",
   "private": true,
